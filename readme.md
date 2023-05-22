@@ -1,4 +1,5 @@
-# MISSION MQTT Network Simulation
+# MQTT Network Simulation
+## MISSION - Process Aware Intrusion Detection in IoT Networks
 This repository provides a flexible Python-based MQTT simulation that allows users to define functional devices according to the actuator/sensor principle. The default run.py instantiates 57 devices (27 sensors, 30 actuators). Scaling these devices to thousands of devices is easily possible.
 
 ## Devices
