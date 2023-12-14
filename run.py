@@ -322,18 +322,18 @@ class LedBulb(MQTTActuator):
 if __name__ == "__main__":
     SIMULATION_ALIVE = True
 
-    temperature_sensors = ["livingroom", "kitchen", "bathroom", "garage", "garden1", "garden2", "garden3"]
-    motion_sensors = ["livingroom", "kitchen", "bathroom", "garage", "garden1", "garden2", "garden3"]
-    window_sensors = ["livingroom1", "livingroom2", "livingroom3", "bathroom1", "kitchen1", "kitchen2", "garage"]
-    door_sensors = ["main", "garage"]
-    smoke_detectors = ["livingroom", "kitchen", "bathroom", "garage"]
+    temperature_sensors = ["log_server", "belt_circulation", "cleaning_system", "pcs_server", "test_system1", "test_system2", "test_system3"]
+    motion_sensors = ["log_server", "belt_circulation", "cleaning_system", "pcs_server", "test_system1", "test_system2", "test_system3"]
+    window_sensors = ["log_server1", "log_server2", "log_server3", "cleaning_system1", "belt_circulation1", "belt_circulation2", "pcs_server"]
+    door_sensors = ["main", "pcs_server"]
+    smoke_detectors = ["log_server", "belt_circulation", "cleaning_system", "pcs_server"]
     SENSORS_COUNT = len(temperature_sensors) + len(motion_sensors) + len(window_sensors) + len(door_sensors) + len(smoke_detectors)
 
-    led_actuators = ["livingroom1", "livingroom2", "kitchen1", "kitchen2", "bathroom", "garden1", "garden2", "garage"]
-    firealarm_actuators = ["livingroom", "kitchen", "bathroom", "garage"]
-    shutter_actuators = ["livingroom1", "livingroom2", "livingroom3", "bathroom1", "kitchen1", "kitchen2", "garage"]
-    door_actuators = ["livingroom", "kitchen", "bathroom", "garage"]
-    thermostat_actuators = ["livingroom1", "livingroom2", "livingroom3", "bathroom", "kitchen1", "kitchen2", "garage"]
+    led_actuators = ["log_server1", "log_server2", "belt_circulation1", "belt_circulation2", "cleaning_system", "test_system1", "test_system2", "pcs_server"]
+    firealarm_actuators = ["log_server", "belt_circulation", "cleaning_system", "pcs_server"]
+    shutter_actuators = ["log_server1", "log_server2", "log_server3", "cleaning_system1", "belt_circulation1", "belt_circulation2", "pcs_server"]
+    door_actuators = ["log_server", "belt_circulation", "cleaning_system", "pcs_server"]
+    thermostat_actuators = ["log_server1", "log_server2", "log_server3", "cleaning_system", "belt_circulation1", "belt_circulation2", "pcs_server"]
     ACTUATORS_COUNT = len(led_actuators) + len(firealarm_actuators) + len(shutter_actuators) + len(door_actuators) + len(thermostat_actuators)
 
     logger.info("Starting simulation with %d sensors and %d actuators...", SENSORS_COUNT, ACTUATORS_COUNT)
